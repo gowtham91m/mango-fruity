@@ -10,5 +10,6 @@ const HomePage = () => {
 };
 const HomepageWrapper = styled.div`
 min-height=100vh`;
-const Heading = styled.div``;
+const Heading = styled.div`
+font-size=200px`;
 export default HomePage;

@@ -1,11 +1,19 @@
 import Navbar from "./components/Navbar/Navbar";
-import AdminLogin from "./pages/AdminLogin";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AdminLogin from "./Pages/AdminLogin";
+import HomePage from "./Pages/HomePage";
 
 function App() {
   return (
     <div>
-      <Navbar />
-      <AdminLogin />
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/Pages/HomePage" element={<HomePage />} />
+          <Route path="/Pages/AdminLogin" element={<AdminLogin />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
