@@ -1,4 +1,10 @@
-import { NavbarContainer, MenuItem, Nav, LoginItem } from "./Navbar.styles";
+import {
+  NavbarContainer,
+  MenuItem,
+  Nav,
+  LoginItem,
+  NavLink,
+} from "./Navbar.styles";
 import { IconContext } from "react-icons";
 import { Link } from "react-router-dom";
 
@@ -9,10 +15,10 @@ const Navbar = () => {
         <Nav>
           <NavbarContainer>
             <MenuItem>
-              <Link to="../../Pages/HomePage">Home</Link>
+              <NavLink to="../../Pages/HomePage">Home</NavLink>
             </MenuItem>
             <LoginItem>
-              <Link to="../../Pages/AdminLogin">AdminLogin</Link>
+              <NavLink to="../../Pages/AdminLogin">AdminLogin</NavLink>
             </LoginItem>
           </NavbarContainer>
         </Nav>

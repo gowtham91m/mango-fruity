@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Nav = styled.nav`
   font-size: 25px;
@@ -35,6 +36,16 @@ export const MenuItem = styled.li`
     &:hover {
       border: none;
     }
+  }
+`;
+
+export const NavLink = styled(Link)`
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  &:hover {
+    color: gray;
+    background: black;
   }
 `;
 
