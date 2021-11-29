@@ -4,7 +4,7 @@ import styled from "styled-components";
 const HomePage = () => {
   return (
     <HomepageWrapper>
-      <Heading>Home page</Heading>
+      <Heading>Welcome to my page</Heading>
     </HomepageWrapper>
   );
 };

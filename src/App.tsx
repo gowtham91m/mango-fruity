@@ -1,10 +1,11 @@
 import Navbar from "./components/Navbar/Navbar";
+import AdminLogin from "./pages/AdminLogin";
 
 function App() {
   return (
     <div>
       <Navbar />
-      Welcome to my page
+      <AdminLogin />
     </div>
   );
 }

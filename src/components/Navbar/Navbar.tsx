@@ -1,4 +1,3 @@
-import React from "react";
 import { NavbarContainer, MenuItem, Nav, LoginItem } from "./Navbar.styles";
 import { IconContext } from "react-icons";
 
