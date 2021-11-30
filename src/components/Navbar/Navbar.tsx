@@ -21,18 +21,20 @@ const Navbar = () => {
   }
   return (
     <div>
-      <IconContext.Provider value={{ color: "pink" }}>
-        <Nav>
-          <NavbarContainer>
-            <MenuItem>
-              <NavLink to="../../Pages/HomePage">Home</NavLink>
-            </MenuItem>
-            <LoginItem>
-              <button onClick={AdminLogin}>admin login</button>
-            </LoginItem>
-          </NavbarContainer>
-        </Nav>
-      </IconContext.Provider>
+      <div>
+        <IconContext.Provider value={{ color: "pink" }}>
+          <Nav>
+            <NavbarContainer>
+              <MenuItem>
+                <NavLink to="../../Pages/HomePage">Home</NavLink>
+              </MenuItem>
+              <LoginItem>
+                <button onClick={AdminLogin}>admin login</button>
+              </LoginItem>
+            </NavbarContainer>
+          </Nav>
+        </IconContext.Provider>
+      </div>
       {isShowLogin && <AdminLoginForm />}
       {isShowLogin && <Backdrop onClick={BackdropHide} />}
     </div>

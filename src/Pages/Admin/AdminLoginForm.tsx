@@ -57,5 +57,6 @@ const AdminWrapper = styled.div`
   align-items: flex-end;
   position: absolute;
   right: 0;
+  z-index: 10;
 `;
 export default AdminLoginForm;
