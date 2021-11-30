@@ -5,8 +5,7 @@ const HomePage = () => {
   return (
     <HomepageWrapper>
       <Heading>
-        full time artist that includes photography, pencil sketching and coding.
-        Some of it helps me make my living when I code for someone else...
+        full time artist that includes photography, pencil sketching and coding
       </Heading>
     </HomepageWrapper>
   );

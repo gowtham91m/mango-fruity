@@ -6,9 +6,6 @@ const StyledLogin = styled.div`
   flex-flow: column;
   width: 200px;
   height: 200px;
-  margin-left: auto;
-  // margin-right: auto;
-
   border: 2px solid #000;
   border-radius: 20px;
   background: LightSlateGray;
@@ -45,12 +42,20 @@ const StyledInput = styled.input`
 `;
 
 const AdminLoginForm = () => (
-  <StyledLogin>
-    <h2>Login</h2>
-    <StyledInput type="text" placeholder="email" />
-    <StyledInput type="password" placeholder="password" />
-    <button className="btn">Login</button>
-  </StyledLogin>
+  <AdminWrapper>
+    <StyledLogin>
+      <h2>Login</h2>
+      <StyledInput type="text" placeholder="email" />
+      <StyledInput type="password" placeholder="password" />
+      <button className="btn">Login</button>
+    </StyledLogin>
+  </AdminWrapper>
 );
 
+const AdminWrapper = styled.div`
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  right: 0;
+`;
 export default AdminLoginForm;

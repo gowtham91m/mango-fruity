@@ -55,3 +55,5 @@ export const LoginItem = styled.button`
   // color: white;
   cursor: pointer;
 `;
+
+export const ErrorMsg = styled.span``;
