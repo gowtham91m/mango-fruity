@@ -13,7 +13,7 @@ import { useState } from "react";
 const Navbar = () => {
   const [isShowLogin, setShowLogin] = useState(false);
   function AdminLogin() {
-    setShowLogin(true);
+    setShowLogin((isShowLogin) => !isShowLogin);
   }
   function BackdropHide() {
     setShowLogin(false);
