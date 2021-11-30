@@ -6,9 +6,18 @@ import {
   NavLink,
 } from "./Navbar.styles";
 import { IconContext } from "react-icons";
-import { Link } from "react-router-dom";
+import AdminLoginForm from "../../Pages/AdminLogin/AdminLoginForm";
+import Backdrop from "../../Pages/AdminLogin/Backdrop";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [isShowLogin, setShowLogin] = useState(false);
+  function AdminLogin() {
+    setShowLogin(true);
+  }
+  function BackdropHide() {
+    setShowLogin(false);
+  }
   return (
     <div>
       <IconContext.Provider value={{ color: "pink" }}>
@@ -18,11 +27,15 @@ const Navbar = () => {
               <NavLink to="../../Pages/HomePage">Home</NavLink>
             </MenuItem>
             <LoginItem>
-              <NavLink to="../../Pages/AdminLogin">AdminLogin</NavLink>
+              <button className="btn" onClick={AdminLogin}>
+                admin login
+              </button>
             </LoginItem>
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>
+      {isShowLogin && <AdminLoginForm />}
+      {isShowLogin && <Backdrop onClick={BackdropHide} />}
     </div>
   );
 };

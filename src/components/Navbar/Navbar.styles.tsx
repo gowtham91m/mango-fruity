@@ -52,6 +52,6 @@ export const NavLink = styled(Link)`
 export const LoginItem = styled.button`
   background: none;
   border: none;
-  color: white;
+  // color: white;
   cursor: pointer;
 `;
