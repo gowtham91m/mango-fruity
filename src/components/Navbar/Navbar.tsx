@@ -4,7 +4,6 @@ import {
   Nav,
   LoginItem,
   NavLink,
-  ErrorMsg,
 } from "./Navbar.styles";
 import { IconContext } from "react-icons";
 import AdminLoginForm from "../../Pages/Admin/AdminLoginForm";
@@ -26,10 +25,13 @@ const Navbar = () => {
           <Nav>
             <NavbarContainer>
               <MenuItem>
-                <NavLink to="../../Pages/HomePage">Home</NavLink>
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="/Photography">Photography</NavLink>
+                <NavLink to="/Programming">Programming</NavLink>
+                <NavLink to="/Drawings">Drawings</NavLink>
               </MenuItem>
               <LoginItem>
-                <button onClick={AdminLogin}>admin login</button>
+                <span onClick={AdminLogin}>admin login</span>
               </LoginItem>
             </NavbarContainer>
           </Nav>

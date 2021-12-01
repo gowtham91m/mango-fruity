@@ -27,7 +27,7 @@ export const NavbarContainer = styled.nav`
 
 export const MenuItem = styled.li`
   list-style: none;
-  font-size: 30px;
+  font-size: 25px;
   // height: 20px;
   color: white;
   display: flex;
@@ -49,11 +49,10 @@ export const NavLink = styled(Link)`
   }
 `;
 
-export const LoginItem = styled.button`
+export const LoginItem = styled.span`
   background: none;
+  font-size: 20px;
   border: none;
-  // color: white;
+  color: white;
   cursor: pointer;
 `;
-
-export const ErrorMsg = styled.span``;
