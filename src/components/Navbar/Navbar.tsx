@@ -67,7 +67,7 @@ const Navbar = () => {
             <NavLink to="/Photography">Photography</NavLink>
             <NavLink to="/Programming">Programming</NavLink>
             <NavLink to="/Drawings">Drawings</NavLink>
-            <Manu onClick={handleClick}>Manushree</Manu>
+            <Manu onClick={handleClick}>Manu blog</Manu>
           </MenuItem>
           <LoginItem>
             <span onClick={AdminLogin}>admin login</span>
