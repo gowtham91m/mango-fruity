@@ -2,17 +2,17 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const Nav = styled.nav`
-  font-size: 25px;
   position: sticky;
   top: 0;
   z-index: 999;
   height: 80px;
-  // background-color: rgba(0, 0, 0, 0.5);
   background-color: black;
-  // box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 992px) {
+    display: none;
+  }
 `;
 
 export const NavbarContainer = styled.nav`
@@ -27,12 +27,10 @@ export const NavbarContainer = styled.nav`
 
 export const MenuItem = styled.li`
   list-style: none;
-  font-size: 25px;
-  // height: 20px;
+  font-size: 20px;
   color: white;
   display: flex;
   @media only screen and (max-width: 1000px) {
-    // width: 100%;
     &:hover {
       border: none;
     }
@@ -40,6 +38,14 @@ export const MenuItem = styled.li`
 `;
 
 export const NavLink = styled(Link)`
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  @media screen and (max-width: 992px) {
+    padding: 0px;
+  }
+`;
+export const Manu = styled.span`
   padding: 20px;
   color: white;
   text-decoration: none;
@@ -47,12 +53,46 @@ export const NavLink = styled(Link)`
     color: gray;
     background: black;
   }
+  cursor: pointer;
 `;
-
 export const LoginItem = styled.span`
   background: none;
-  font-size: 20px;
+  font-size: 15px;
   border: none;
   color: white;
   cursor: pointer;
+`;
+
+export const Mobileview = styled.div`
+  display: none;
+  @media screen and (max-width: 992px) {
+    display: block;
+  }
+`;
+
+export const Sidenav = styled.div`
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: black;
+  top: 0;
+  opacity: 80%;
+  z-index: 10;
+`;
+
+export const SidenavContainer = styled.div`
+  margin: 0 auto;
+`;
+
+export const SideMenuItem = styled.li`
+  list-style: none;
+  font-size: 20px;
+  color: white;
+  padding: 10px;
+`;
+
+export const UL = styled.ul`
+  display: block;
+  padding: 20px;
 `;
