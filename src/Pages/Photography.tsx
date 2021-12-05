@@ -18,6 +18,12 @@ const Imgdiv = styled.div`
   > img {
     width :1000px ;
     }
+    
+  @media only screen and (max-width: 1000px) {
+      > img {
+        width : 400px;
+      }
+    }
   }
 `;
 
